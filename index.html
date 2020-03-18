@@ -23,479 +23,333 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+		<!--- font awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
 
 </head>
-<!-- Initiatlise DATA AOS -->
+
 <body>
 <div class = 'container-fluid bg-light' id="maincontainer">
 	<!------------ NAVBAR ------------->
+	<div id="mySidenav" class="sidenav" style="z-index:2">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#mainsection">Main Page</a>
+		<a href="#about">About</a>
+		<a href="#projects">Projects</a>
+		<a href="#skills">Skills</a>
+		<a href="#contact">Contact</a>
+		<a href="#">Blog</a>
+		<div class="row pl-3" style="position: absolute; bottom: 80px">
+			
+			<a href="#" ><i class="fab fa-github fa-3x socialmediaicon grow" style=""></i></a>
+        	<a href="#"><i class="fab fa-linkedin fa-3x socialmediaicon grow" style=""></i></a>
+		</div>
+	</div>
+	<div class="centerthis" style="position: fixed; z-index: 1; top: 20vh" onclick="openNav()">
+		<button type="button" id="sidebarCollapse" class="btn btn-info">
+			
+			<div class="py-3"></div>
+			<span style="writing-mode: vertical-rl; text-orientation: sideways; font-size: 18px; font-weight: 600">Navigation</span>
+			<div class="py-2"></div>
+		</button>
+	</div>
 	
 
     <!-- Jumbotron -->
-    <div class="jumbotron" style="background-image: url(images/jumbotronpicreduced.jpg); border-color: white; border-radius:0px; margin-bottom:0px; background-repeat: no-repeat; padding:0%; background-attachment: fixed;background-position: center; background-size: cover; height: 100vh">
-        <div class="text-white text-center rgba-stylish-strong py-2 px-4" style="">
+    <div class="jumbotron" id="mainsection" style="background-image: url(images/jumbotronpicreduced.jpg); border-color: white; border-radius:0px; margin-bottom:0px; background-repeat: no-repeat; padding:0%; background-attachment: fixed;background-position: center; background-size: cover; height: 100vh; width:">
+		<div class="text-white text-center centerthis">
+
             <div class="" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1800">
-        	    <div class="py-5" style="margin-top: 15vh"></div>
-         	   <!-- Content -->
-	            <h2 class="card-title my-0 py-2 Heythere" style="font-size:42px; font-weight: 800;">Hey There! Timothy Here.</h2>
-	            <div style= "padding-left:20%; padding-right:20%">
+				<img src="images/guitar5.jpg" class="" style="width: 250px; object-fit: cover; z-index: 1000; border-radius: 50%">
+				<div class="py-3"></div>
+				
+				<h2 class="card-title my-0 py-2 Heythere" style="font-size:38px; font-weight: 800;">Hey there! Timothy here.</h2>
+				
+	            <div style= "padding-left:25%; padding-right:25%">
 	          	  <hr style="border-top: 2px solid white;">
-	          	  <div class="py-2"></div>
 	      	    </div>
 
-	      	    <p class="card-title py-2">Welcome to the personal website of an aspiring web developer.</p>
+				<div class="px-2">
+				  <p class="card-title pt-2" style="font-size: 18px; color:white">I am a full stack developer based in Singapore with a focus on writing <i>clean </i> and <i>efficient</i> code |<br>
+				  Interested in deep technologies, enterprise resource planning systems and good seafood</p> 
+				</div>
 
+				<div class="py-1"></div>
+				
+				<div class="svg">
+					<a class="button" href="#projects">
+						<svg>
+							<rect height="50" width="300" fill="transparent" />
+						</svg>
+						<span class=""style="color:white; font-size: 24px; padding-top: 5px; font-weight: 600">View my projects</span>
+					</a>
+				</div>
+				<div class="svg" style="">
+					<a class="button" href="#projects">
+						<svg>
+							<rect height="50" width="300" fill="transparent" />
+						</svg>
+						<span class=""style="color:white; font-size: 24px; padding-top: 5px; font-weight: 600">Blog</span>
+					</a>
+				</div>
 
-	            <!------------ SOCIAL MEDIA ICONS ------------->
-          		<a href="#"><i class="fab fa-facebook-square fa-3x socialmediaicon grow" style=""></i></a>
-          		<a href="#"><i class="fab fa-instagram fa-3x socialmediaicon grow" style=""></i></a>
-          		<a href="#"><i class="fab fa-linkedin fa-3x socialmediaicon grow" style=""></i></a>
-          		<a href="#"><i class="fab fa-twitter-square fa-3x socialmediaicon grow" style=""></i></a>
-          		
-      		
-        </div>
-        <div class=""></div>
-        <a class="socialmediaicon bottomarrow" href="#scrollnav"><i class="fa fa-angle-double-down fa-3x arrowdown grow" aria-hidden="true" style="margin:0px;padding:0px"></i></a>
-        </div>
-    </div>
-    <!-- Jumbotron -->
-	<!------------ INTRODUCTION TO MYSELF ------------->
-	<div class="container-fluid" style="padding:0px">
-		
+			</div>
 			
-			<nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="scrollnav">
-		  		<a class="navbar-brand">Navigation > ></a>
-		  		<button class="navbar-toggler abc" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		    			<span class="navbar-toggler-icon"></span>
-		  		</button>
-		  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		    		<div class="navbar-nav">
-		      <a class="nav-item nav-link navlinkstyle" href="#aboutme">About</a>
-		      <a class="nav-item nav-link navlinkstyle" href="#resume">Resume</a>
-		      <a class="nav-item nav-link navlinkstyle" href="#skills">Skills</a>
-		      <a class="nav-item nav-link navlinkstyle" href="#projects">Projects</a>
-		      <a class="nav-item nav-link navlinkstyle" href="#contact">Contact</a>
-		    </div>
-		  </div>
-		</nav>
-			
+		</div>
 		
-		<div class="container" style="padding-left: 5%; padding-right: 5%" id="intro">
-			<div class="py-3"></div>
-			<p class="card-title text-center" style="font-size:42px; font-weight: 800;" id="aboutme">About Me</p>
-				<hr>
-	  		<div class="row">
-	  			<div class="col-md-5" style="">
-	  				<div class="py-2"></div>
-	  				<img src="images/guitar5.jpg" class="mypicture grow" style=""  data-aos="fade-right" data-aos-easing="linear"data-aos-duration="1000">
-	  			</div>
-	  			<div class="col-md-7"  data-aos="fade-left" data-aos-easing="linear"data-aos-duration="1000">
-	  				<div class =" py-2 centeronscreen" style="line-height:50px; font-weight: 600;">
-	  					<p class="text-center" style="font-weight: 100">"Did you exchange a walk on part in a war, for a lead role in a cage?"<br>- Pink Floyd</p>
-	  					<p>I have always believed that life is like a buffet, and all the oppportunities of the world are there for your taking. I love to make people laugh and to make a positive impact on the world. I am looking to become a full-stack web developer with a focus on generating clean and efficient code.</p>
-	  				</div>
-	 			</div>
-	  		</div>
+	</div>
+</div>
+
+<!------------ About Me------------->
+<div class="container-fluid" style="padding:0px">			
+	<div class="py-4"></div>
+	<div class="container" style="" id="about">
+		<p class="card-title text-center" style="font-size:42px; font-weight: 800;" id="aboutme">About Me</p>
+			<hr>
+			<div class="py-2"></div>
+		<div class="row">
+			<div class="col-md-5" style="">
+				<img src="images/mypic.jpg" class="mypicture" style=""  data-aos="fade-in" data-aos-easing="linear"data-aos-duration="1000">
+				<div class="py-2"></div>
+			</div>
+			<div class="col-md-7"  data-aos="fade-in" data-aos-easing="linear"data-aos-duration="1000">
+				<div class ="centerthis" style="line-height:50px; font-weight: 600;">
+					<p class="text-center" style="font-weight: 100; margin:0px; line-height:2rem">"Did you exchange a walk on part in a war, for a lead role in a cage?"<br>- Pink Floyd</p>
+					<div class="py-3"></div>
+					<p class="text-justify card-title" style="margin:0px; line-height:2rem">I am a penultimate year student in the National University of Singapore pursuing a Bachelors of Business Administration
+						, with a double specilisation in Finance/Innovation and Entrepreneurship. I take great interest in deep technologies and its applications. I believe that these ventures will shape our lives 
+						to a large extent in the future, and I want to play a part in it. I want to combine my business expertise with my technical knowledge in order to create value.<br>
+					</p>	
+			</div>
 		</div>
 	</div>
-	<div class="py-2"></div>
-	<!-------- PROFESSIONAL RESUME ------->
-	<div class="container-fluid" style=" background-color: #dbdbdb; color:#0F193B"  id="resume">
-		<div class="py-3"></div>
-		<div class="container" style="padding-left: 5%; padding-right: 5%">
-			<p class="card-title text-center" style="font-size:42px; font-weight: 800; color: black;">Resume</p>
+	<div class="py-4"></div>
+</div>
+
+
+	<!------------ PROJECTS SECTION -------------------------->
+<div class="container-fluid" style="color:#0F193B; background-color: #dbdbdb;" id="projects">
+	<div class="py-4"></div>
+	<div class="container" style="">
+		<p class="card-title text-center" style="font-size:42px; font-weight: 800;">My Projects</p>
+		<hr>
+		<div class=""></div>
+
+		<div class="row">
+			<div class="col-md-6 col-xs-12 px-3 py-3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+				<a class="card bg-dark text-white"  href="https://www.aiesec.org.sg" target="none">
+					<img src="images/aiesecproject.png" class="card-img img-fluid" alt="...">
+					<div class="card-img-overlay">
+						<h5 style="font-weight: 700" class="card-title animate-text">AIESEC in Singapore</h5>
+						<p class="card-text animate-text">Built with wordpress and PHP with a focus on managing and delivering content about AIESEC products to customers.</p>
+
+					</div>
+
+					<div class="dots">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-6 col-xs-12 px-3 py-3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+				<div class="card bg-dark text-white">
+					<img src="images/personalproject.png" class="card-img img-fluid" alt="...">
+					<div class="card-img-overlay">
+						<h5 class="card-title animate-text" style="font-weight: 700">Personal Project</h5>
+						<p class="card-text animate-text">This very website itself was created mainly with bootstrap components.</p>
+
+					</div>
+
+					<div class="dots">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6 col-xs-12 px-3 py-3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+				<a class="card bg-dark text-white"  href="https://www.aiesec.org.sg" target="none">
+					<img src="images/spayce.png" class="card-img img-fluid" alt="...">
+					<div class="card-img-overlay">
+						<h5 style="font-weight: 700" class="card-title animate-text">sPAYce</h5>
+						<p class="card-text animate-text">A 2-sided platform application with multiple post functionalities created on Larave.</p>
+
+					</div>
+
+					<div class="dots">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</a>
+			</div>
+			
+		</div>
+
+	</div>
+	<div class="py-4"></div>
+</div>
+
+	<!-- SKILLS SECTION-->
+<div class="container-fluid" style="" id="skills">
+	<div class="py-4"></div>
+	<div class="container" style="" id="skills">
+		<p class="card-title text-center" style="font-size:42px; font-weight: 800;">Skills | Proficiencies</p>
 			<hr>
-			<!-- Education rows -->
-			<div class="row">
-				<div class="col-md-4">
-					<h3 style="font-weight: 700; color: grey">Education:</h3>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
-				</div>
-			</div>
+  		<div class="row">
+			
+			<div class="col-md-6 col-xs-12 px-4">
+				<h3 class="text-center py-2" style="font-weight: 700; color: grey">Coding</h3>
 
-			<div class="row py-1">
-				<div class="col-md-4">
-					<p style="font-size: 18px; font-weight: 600">National University of Singapore</p>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
-					<p style="font-size: 18px; font-weight: 600">Bachelor of Business Administration</p>
-				</div>
-			</div>
+				<div class="row py-3">
+					
+					<div class="col-4 text-center">
+						<img src="images/html5icon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px " >HTML5</h5>
+					</div>
 
-			<div class="row">
-				<div class="col-md-4">
-					<p style="font-size:; font-weight: 100">August 2017 - Current</p>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
-					<li>I am currrently taking a double specialisation in Entrepreneurship and Finance.</li>
-				</div>
-			</div>
-			<br>
+					<div class="col-4 text-center">
+						<img src="images/css3icon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px">CSS3</h5>
+					</div>
 
-
-			<div class="row py-1">
-				<div class="col-md-4">
-					<p style="font-size: 18px; font-weight: 600">Victoria Junior College</p>
+					<div class="col-4 text-center">
+						<img src="images/phpicon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px">PHP</h5>
+					</div>
 				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
+				<div class="row py-3">
+					
+					<div class="col-4 text-center">
+						<img src="images/javascripticon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px">Javascript</h5>
+					</div>
+
+					<div class="col-4 text-center">
+						<img src="images/pythonicon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px">Python</h5>
+					</div>
+
+					<div class="col-4 text-center">
+						<img src="images/mysqlicon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px">My SQL</h5>
+					</div>
+					
+				</div>
+
+				<div class="row py-3">
+					
+					<div class="col-4 text-center">
+						<img src="images/laravelicon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px">Laravel</h5>
+					</div>
+
+					<div class="col-4 text-center">
+						<img src="images/bootstrapicon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px">Bootstrap</h5>
+					</div>
+
+					<div class="col-4 text-center">
+						<img src="images/jqueryicon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px">JQuery</h5>
+					</div>
 					
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-md-4">
-					<p style="font-size:; font-weight: 100">August 2017 - Current</p>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
-					<li>Attained AAAA/A in GCE A Levels Examination and was vice-captain of the volleyball team.</li>
-				</div>
-			</div>
-			<br><br>
+			<div class="col-md-6 col-xs-12 px-4 paddingtopwhensmall">
+				<h3 class="text-center py-2" style="font-weight: 700; color: grey">Others</h3>
 
-			<!-- Work Experience Rows -->
-			<div class="row">
-				<div class="col-md-4">
-					<h3 style="font-weight: 700; color: grey">Work Experience:</h3>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
-				</div>
-			</div>
+				<div class="row py-3">
+					
+					<div class="col-4 text-center">
+						<img src="images/wordpressicon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px">Wordpress</h5>
+					</div>
 
-			<div class="row py-1">
-				<div class="col-md-4">
-					<p style="font-size: 18px; font-weight: 600">REALly.sg</p>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
-					<p style="font-size: 18px; font-weight: 600">Business Consultant</p>
-				</div>
-			</div>
+					<div class="col-4 text-center">
+						<img src="images/microsoftexcelicon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px">MS Excel</h5>
+					</div>
 
-			<div class="row">
-				<div class="col-md-4">
-					<p style="font-size:; font-weight: 100">May 2019 - August 2019</p>
+					<div class="col-4 text-center">
+						<img src="images/microsoftwordicon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px">MS Word</h5>
+					</div>
 				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
-					<li>Utilised both front-end and back-end web development skills in HTML, CSS, PHP and SQL to create the main marketing website of the company. I was responsible for displaying the relevant information from the database on to the main website in a aesthetically pleasing manner.</li>
-					<br>
-					<li>Developed and employed sales processes from the ground up. I was responsible for the creation of our hubspot contacts database, creating email templates and personal messages to reach out to onboard potential partners in the real estate industry for the sales team.</li>
+				<div class="row py-3">
+					
+					<div class="col-4 text-center">
+						<img src="images/hubspoticon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px">Hubspot</h5>
+					</div>
+
+					<div class="col-4 text-center">
+						<img src="images/financeicon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px">Finance</h5>
+					</div>
+
+					<div class="col-4 text-center">
+						<img src="images/css3icon.png">
+						<h5 class="text-center font-weight-bold" style="margin:5px">Laravel</h5>
+					</div>
+					
 				</div>
 			</div>
-			<br>
-
-
-			<div class="row py-1">
-				<div class="col-md-4">
-					<p style="font-size: 18px; font-weight: 600">Deliveroo</p>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
-					<p style="font-size: 18px; font-weight: 600">Private Contractor for Food Delivery</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-4">
-					<p style="font-size:; font-weight: 100">Jan 2017 - Sept 2019</p>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
-					<li>Part time job that I have beeen doing throughout my university in order to pay for my education and living expenses on my own. Was constantly placed in the top tier of riders on the metrics of fast delivery timings, punctuality for sessions and working peak periods.</li>
-				</div>
-			</div>
-			<Br>
-
-			<div class="row py-1">
-				<div class="col-md-4">
-					<p style="font-size: 18px; font-weight: 600">Singapore Armed Forces</p>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
-					<p style="font-size: 18px; font-weight: 600">Naval Diver</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-4">
-					<p style="font-size:; font-weight: 100">March 2015 - Jan 2017</p>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
-					<li>I was tasked with undertaking physically demanding missions underwater that required perseverance, discipline and hard training to execute.</li>
-				</div>
-			</div>
-			<br><br>
-
-			<!-- Co-curricular activity rows -->
-			<div class="row">
-				<div class="col-md-4">
-					<h3 style="font-weight: 700; color: grey">Co-corricular Activities</h3>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
-				</div>
-			</div>
-
-			<div class="row py-1">
-				<div class="col-md-4">
-					<p style="font-size: 18px; font-weight: 600">AIESEC in NUS</p>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
-					<p style="font-size: 18px; font-weight: 600">Team Leader in the Marketing Department</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-4">
-					<p style="font-size:; font-weight: 100">Feb 2018 - May 2019</p>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-7">
-					<li>
-						Was placed in charge of setting the culture and delegating tasks in a small team. Created and sent emails to the entire school population in order to inform and attract students to join AIESEC’s global Programmes.
-					</li>
-					<br>
-					<li>
-						Went on overseas conferences to Japan and Hong Kong and met and made friends with other university students all over the world. Exposed myself to people from different cultures and learnt how to adapt and make friends with people from all countries in an international environment.
-					</li>
-
-				</div>
-			</div>
-			<br></Br>
-		</div>
-	</div>
-
-	<div class="py-2"></div>
-	<!------------ Coding Experience ------------->
-	<div class="container" style="padding-left: 5%; padding-right: 5%" id="skills">
-		<div class="py-3"></div>
-		<p class="card-title text-center" style="font-size:42px; font-weight: 800;">Skills | Proficiencies</p>
-			<hr>
-  		<div class="row px-2">
-
-  			<div class="col-md-6 col-xs-12 px-3">
-  				<h3 class="text-center py-2" style="font-weight: 700; color: grey">Coding</h3>
-
-  				<div class="row">
-  					
-  					<div class="col-4">
-  					<p style="font-weight: 600"><img src="images/htmlicon.png">&nbsp HTML5</p>
-  					</div>
-
-  					<div class="col-8" style="margin-top:6px">
-  					<p class="float-right"><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="far fa-star mx-1"></i></p>
-  					</div>
-  					
-  				</div>
-
-  				<div class="row">
-  					
-  					<div class="col-4">
-  					<p style="font-weight: 600"><img src="images/cssicon.png">&nbsp CSS3</p>
-  					</div>
-
-  					<div class="col-8" style="margin-top:6px">
-  					<p class="float-right"><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="far fa-star mx-1"></i></p>
-  					</div>
-  					
-  				</div>
-
-  				<div class="row">
-  					
-  					<div class="col-4">
-  					<p style="font-weight: 600"><img src="images/bootstrapicon.png">&nbsp Bootstrap</p>
-  					</div>
-
-  					<div class="col-8" style="margin-top:6px">
-  					<p class="float-right"><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="far fa-star mx-1"></i></p>
-  					</div>
-  					
-  				</div>
-
-  				<div class="row">
-  					
-  					<div class="col-4">
-  					<p style="font-weight: 600"><img src="images/phpicon.png">&nbsp PHP</p>
-  					</div>
-
-  					<div class="col-8" style="margin-top:6px">
-  					<p class="float-right"><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="far fa-star mx-1"></i></p>
-  					</div>
-  					
-  				</div>
-
-  				<div class="row">
-  					
-  					<div class="col-4">
-  					<p style="font-weight: 600"><img src="images/javascripticon.png">&nbsp Javascript</p>
-  					</div>
-
-  					<div class="col-8" style="margin-top:6px">
-  					<p class="float-right"><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="far fa-star mx-1"></i><i class="far fa-star mx-1"></i></p>
-  					</div>
-  					
-  				</div>
-
-  				<div class="row">
-  					
-  					<div class="col-4">
-  					<p style="font-weight: 600"><img src="images/pythonicon.png">&nbsp Python</p>
-  					</div>
-
-  					<div class="col-8" style="margin-top:6px">
-  					<p class="float-right"><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="far fa-star mx-1"></i><i class="far fa-star mx-1"></i></p>
-  					</div>
-  					
-  				</div>
-
-  				<div class="row">
-  					
-  					<div class="col-4">
-  					<p style="font-weight: 600"><img src="images/sqlicon.png">&nbsp SQL</p>
-  					</div>
-
-  					<div class="col-8" style="margin-top:6px">
-  					<p class="float-right"><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="far fa-star mx-1"></i><i class="far fa-star mx-1"></i></p>
-  					</div>
-  					
-  				</div>
-
-  				<div class="row">
-  					
-  					<div class="col-4">
-  					<p style="font-weight: 600"><img src="images/jqueryicon.png">&nbsp JQuery</p>
-  					</div>
-
-  					<div class="col-8" style="margin-top:6px">
-  					<p class="float-right"><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="fa fa-star mx-1"></i><i class="far fa-star mx-1"></i><i class="far fa-star mx-1"></i></p>
-  					</div>
-  					
-  				</div>
-
-
-  			</div>
-
-  			<div class="col-md-6 col-xs-12 px-3">
-
-  				<h3 class="text-center py-2" style="font-weight: 700; color: grey">Others</h3>
-
-  				<div class="row">
-  					
-  					<div class="col-4">
-  					<p style="font-weight: 600"><img src="images/bootstrapicon.png">&nbsp Bootstrap</p>
-  					</div>
-
-  					<div class="col-8" style="margin-top:6px">
-  					<p class="float-right"><i class="far fa-star mx-1"></i><i class="far fa-star mx-1"></i><i class="far fa-star mx-1"></i><i class="far fa-star mx-1"></i><i class="far fa-star mx-1"></i></p>
-  					</div>
-  					
-  				</div>
-
-  				<div class="row">
-  					
-  					<div class="col-4">
-  					<p style="font-weight: 600"><img src="images/bootstrapicon.png">&nbsp Bootstrap</p>
-  					</div>
-
-  					<div class="col-8" style="margin-top:6px">
-  					<p class="float-right"><i class="far fa-star mx-1"></i><i class="far fa-star mx-1"></i><i class="far fa-star mx-1"></i><i class="far fa-star mx-1"></i><i class="far fa-star mx-1"></i></p>
-  					</div>
-  					
-  				</div>
-  				
-  			</div>
 
   		</div>
 	</div>
-	<div class="py-2"></div>
-
-	<!------------ PROJECTS SECTION -------------------------->
-	<div class="container-fluid" style=" background-color: #dbdbdb; color:#0F193B" id="projects">
-
-		<div class="container" style="padding-left: 5%; padding-right: 5%">
-			<div class="py-3"></div>
-			<p class="card-title text-center" style="font-size:42px; font-weight: 800;">Projects</p>
-			<hr>
-			<div class="py-2"></div>
-			<div class="row">
-
-				<div class="col-md-6 col-xs-12 px-3 py-3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
-					<a class="card bg-dark text-white"  href="https://www.aiesec.org.sg" target="none">
-					   <img src="images/aiesecproject.png" class="card-img img-fluid" alt="...">
-					   <div class="card-img-overlay">
-					       <h5 style="font-weight: 700" class="card-title animate-text">AIESEC in Singapore</h5>
-					       <p class="card-text animate-text">Built with wordpress and PHP with a focus on managing and delivering content about AIESEC products to customers.</p>
-
-					    </div>
-
-					    <div class="dots">
-					       <span></span>
-					       <span></span>
-					       <span></span>
-					    </div>
-					</a>
-				</div>
-
-
-				<div class="col-md-6 col-xs-12 px-3 py-3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
-					<div class="card bg-dark text-white">
-					   <img src="images/personalproject.png" class="card-img img-fluid" alt="...">
-					   <div class="card-img-overlay">
-					       <h5 class="card-title animate-text" style="font-weight: 700">Personal Project</h5>
-					       <p class="card-text animate-text">This very website itself was created mainly with bootstrap components.</p>
-
-					    </div>
-
-					    <div class="dots">
-					       <span></span>
-					       <span></span>
-					       <span></span>
-					    </div>
+	<div class="py-4"></div>
+</div>
+	
+	<!------------ FOOTER SECTION -------------------------->
+	<div class = 'container-fluid' style="background-color: rgb(25, 41, 94); height: 100vh; position: relative;" id="contact">
+		<div class="row centerthis">
+			<div class="col-md-6 col-xs-12 px-3 ">
+				<div class="row justify-content-center">
+					<div class="col-md-10">
+					<h3 class="text-center" style="color:white">Drop me a friendly message!</h3>
+					<div class="py-2"></div>
+					<form class="form-group" style="color:white">
+						Name:
+						<input class="form-control" type = "text" name ="name" id="name">
+						<div class="py-2"></div>
+						Email:
+						<input class="form-control" type = "email" name ="email" id="email">
+						<div class="py-2"></div>
+						Message:
+						<textarea class="form-control" rows = "4" type = "text" name ="phone" id="phone"></textarea>
+	
+						<div class="py-3">
+							<input class="text-center btn btn-primary" type = "button" onClick="insert_value()" value = "Send Message">
+						</div>
+					</form>
 					</div>
 				</div>
+			</div>
+	
 
+			<div class="col-md-6 col-xs-12 px-3 paddingtopwhensmall">
+				
+					<h3 class="text-center " style="color:white">Follow me on social media</h3>
+					<div class="py-3"></div>
+					<div class="text-center">					
+
+						<a href="https://facebook.com/colorlib" target="_blank" class="button1 github mr-2"><span><i class="fab fa-github" aria-hidden="true"></i></span><p>Github</p></a>	
+	      				<a href="https://twitter.com/colorlib" target="_blank" class="button1 linkedin mr-2"><span><i class="fab fa-linkedin" aria-hidden="true"></i></i></span><p>Linkedin</p></a>	
+	      				<a href="https://twitter.com/colorlib" target="_blank" class="button1 facebook"><span><i class="fab fa-facebook mr-2" aria-hidden="true"></i></span><p>Facebook</p></a>
+					</div>
 			</div>
 		</div>
-	<div class="py-3"></div>
 
-	</div>
-	<!------------ FOOTER SECTION -------------------------->
-	<div class = 'container-fluid' style="background-color: #0F193B; height: 100vh; position: relative" id="contact">
-		<div class="container" style="color:white; padding-right:5%; padding-left: 5%">
-			<div class="py-3"></div>
-			<p class="card-title text-center" style="font-size:42px; font-weight: 800;">Contact me</p>
-			<p class="text-center py-2" style="font-weight: 100; color: lightgrey; opacity: 0.5">"Did you exchange a walk on part in a war, for a lead role in a cage?"- Pink Floyd
-			<hr style="border-top: 1px solid white; opacity: 0.5" class='py-3'>
-			<div class="row px-5">
-
-				<div class="col-md-6 col-xs-12">
-					<a href="#" style="text-decoration: none; color:white"><i class="fab fa-instagram fa-2x socialmediaicon grow" style=""></i><span style="font-weight: 400; margin-bottom: 10px">&nbsp &nbsp https://www.instagram.com</span></a><br><br>
-
-	          		<a href="#" style="text-decoration: none; color:white"><i class="fab fa-instagram fa-2x socialmediaicon grow" style=""></i><span style="font-weight: 400; margin-bottom: 10px">&nbsp &nbsp https://www.instagram.com</span></a><br><br>
-	          		
-				</div>
-
-				<div class="col-md-6 col-xs-12">
-	          		<a href="#" style="text-decoration: none; color:white"><i class="fab fa-instagram fa-2x socialmediaicon grow" style=""></i><span style="font-weight: 400; margin-bottom: 10px">&nbsp &nbsp https://www.instagram.com</span></a><br><br>
-
-	          		<a href="#" style="text-decoration: none; color:white"><i class="fab fa-instagram fa-2x socialmediaicon grow" style=""></i><span style="font-weight: 400; margin-bottom: 10px">&nbsp &nbsp https://www.instagram.com</span></a><br><br>
-				</div>
-
-			</div>
 			<div class="text-center py-2 copyrighttext" style="color: #fcfaff">© 2019 Copyright:
-	    	<a>Timothy Tiew</a>&nbsp&nbsp&nbsp&nbsp&nbsp<a>Created with Bootstrap</a><br>
-	    	
+	    	    <a>Timothy Tiew</a>&nbsp&nbsp&nbsp&nbsp&nbsp<a>Created with Bootstrap</a><br>
 	  		</div>
-	  	</div>
 	</div>
 	<!------------ END FOOTER SECTION -------------------------->
 </div>
@@ -522,23 +376,15 @@
 </Script>
 
 <script>
-		jQuery(function($) {
-
-		    var $nav = $('#scrollnav');
-		    var $win = $(window);
-		    var winH = $win.height();   // Get the window height.
-
-		    $win.on("scroll", function () {
-		        if ($(this).scrollTop() > winH ) {
-		            $nav.addClass("fixed-top");
-		        } else {
-		            $nav.removeClass("fixed-top");
-		        }
-		    }).on("resize", function(){ // If the user resizes the window
-		       winH = $(this).height(); // you'll need the new height value
-		    });
-
-		});
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+	
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
 </script>
+
+
 
 </html>
